@@ -12,6 +12,12 @@ const server = http.createServer(function (request, response){
         const text = fs.readFileSync('html/str2.html', 'utf8');
         response.end(text);
     }
+
+    else if(request.url == '/str3.html') {
+        const text = fs.readFileSync('html/str3.html', 'utf8');
+        response.end(text);
+    }
+
     else  {
         const text = fs.readFileSync('html/index.html', 'utf8');
         response.end(text);
