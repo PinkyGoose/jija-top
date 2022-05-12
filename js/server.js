@@ -8,6 +8,14 @@ const server = http.createServer(function (request, response){
         const css = fs.readFileSync('css/style.css','utf8');
         response.end(css);
     }
+    if(request.url == '/css/style2.css'){
+        const css = fs.readFileSync('css/style2.css','utf8');
+        response.end(css);
+    }
+    if(request.url == '/css/style3.css'){
+        const css = fs.readFileSync('css/style3.css','utf8');
+        response.end(css);
+    }
     else if(request.url == '/str2.html') {
         const text = fs.readFileSync('html/str2.html', 'utf8');
         response.end(text);
