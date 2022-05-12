@@ -4,7 +4,7 @@ const fs = require('fs');
 
 const server = http.createServer(function (request, response){
     console.log('Hello!'+request.method+request.url);
-    if(request.url=='/style.css'){
+    if(request.url == '/style.css'){
         const css = fs.readFileSync('css/style.css','utf8');
         response.end(css);
     }
