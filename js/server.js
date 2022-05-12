@@ -8,7 +8,11 @@ const server = http.createServer(function (request, response){
         const css = fs.readFileSync('css/style.css','utf8');
         response.end(css);
     }
-    else {
+    else if(request.url == '/html/str2.html') {
+        const text = fs.readFileSync('html/str2.html', 'utf8');
+        response.end(text);
+    }
+    else  {
         const text = fs.readFileSync('html/index.html', 'utf8');
         response.end(text);
     }
