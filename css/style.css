@@ -12,11 +12,23 @@ h1 {
 
 h2 {
     position: absolute;
-    top: 80%;
+    top: 70%;
     left: 50%;
     transform: translate(-80%,-50%);
     font-size: 40px;
 
     color: crimson;
 
+}
+a{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+}
+span{
+    font-size: 40px;
+
+    color: crimson;
 }
