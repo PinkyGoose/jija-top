@@ -4,7 +4,7 @@
   "description": "my first web application",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node js/server.js"
   },
   "author": "PinkyGoose",
   "license": "ISC"
